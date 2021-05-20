@@ -634,8 +634,7 @@ void turn2(int J1,int J2, int J3,int J4){
     }
     if (J4flag ==0){
         Dptr->direction=Dptr.direction+J4;
-    }
-    
+    }  
 }
 
 
