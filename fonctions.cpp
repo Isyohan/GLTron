@@ -610,6 +610,35 @@ float al()
     f= rand()/(RAND_MAX+1.0); 
     return(f); }
 
+int 16toPlusMinus(uint16_t J){
+    if(J<seuilD){return(-1);}
+    if(J>seuilG){return(1);}
+    return(0);
+}
+int digtoPlusMinus(int g,int d){
+    if(g==1){return -1);}
+    if(d==1){return 1);}
+    return 0;        
+}
+void turn2(int J1,int J2, int J3,int J4){
+    if (J1flag ==0){
+        Aptr->direction=Aptr.direction+J1;
+        //digitalWrite();
+    }
+    if (J2flag ==0){
+        Bptr->direction=Bptr.direction+J2;
+        //digitalWrite();
+    }
+    if (J3flag ==0){
+        Cptr->direction=Cptr.direction+J3;
+    }
+    if (J4flag ==0){
+        Dptr->direction=Dptr.direction+J4;
+    }
+    
+}
+
+
 
 void robot(int x,int i,int p) {
     float seuil=10;
